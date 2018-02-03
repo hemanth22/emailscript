@@ -1,0 +1,16 @@
+<html>
+         <body>
+
+         <strong>Hi [% first_name %]</strong>,
+<br/>
+<br/>
+         <p>
+         This is to confirm your purchase of $ [% amt_due %].
+         </p>
+<br/>
+<br/>
+         <p>
+         Thank you!
+         </p>
+         </body>
+         </html>
