@@ -1,0 +1,17 @@
+sudo: required
+language: bash
+
+script:
+  - sudo apt-get -y update
+  - sudo apt-get install -y epel-release
+  - sudo apt-get instal -y perl-*
+  - sudo apt-get installl -y libcam-pdf-perl
+  - sudo apt-get install -y build-essential
+  - sudo cpan
+  - make install
+  - install Bundle::CPAN
+
+notifications:
+ slack:
+   rooms:
+- nothingorganization:GN1JzklSpbMyfZVWcS05U6a0#mygitrepos

@@ -11,7 +11,7 @@ $params{last_name} = 'Bitra';
 $params{amt_due} = '1200';
 
 my %options;
-$options{INCLUDE_PATH} = '/home/bhemanth';
+$options{INCLUDE_PATH} ='$pwd';
 
 my $msg = MIME::Lite::TT::HTML->new(
                     From        =>  'bhemanth@localhost',
@@ -27,7 +27,7 @@ my $msg = MIME::Lite::TT::HTML->new(
                     TmplOptions =>  \%options,
                     TmplParams  =>  \%params,
                     Type        =>  'multipart/mixed',
-                                  Path        =>  '/home/bhemanth/Desktop/LL.pdf',
+                                  Path        =>  'LL.pdf',
                                   Filename    =>  'LL.pdf',
                                   Disposition =>  'attachment'
 );
