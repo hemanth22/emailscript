@@ -8,7 +8,8 @@ before_install:
  - sudo apt-get install -y libcam-pdf-perl
  - sudo apt-get install -y build-essential
  - sudo apt-get install -y sendmail
- - sudo cpan
+ - cpan-install --deps       # installs prereqs, including recommends
+ - cpan-install --coverage   # installs converage prereqs, if enabled
  - make install
  - install Bundle::CPAN
  - CPAN MIME::Lite
