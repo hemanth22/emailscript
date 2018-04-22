@@ -10,6 +10,8 @@ script:
   - sudo cpan
   - make install
   - install Bundle::CPAN
+  - CPAN MIME::Lite
+  - CPAN MIME::Lite::TT::HTML
 
 notifications:
  slack:
