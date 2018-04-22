@@ -12,6 +12,9 @@ script:
   - install Bundle::CPAN
   - CPAN MIME::Lite
   - CPAN MIME::Lite::TT::HTML
+  - sudo apt-get install -y sendmail
+  - sudo apt-get install mailx
+  - ./emailscript.pl
 
 notifications:
  slack:
