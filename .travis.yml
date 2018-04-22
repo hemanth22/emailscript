@@ -14,11 +14,11 @@ before_install:
  - CPAN MIME::Lite
  - CPAN MIME::Lite::TT::HTML
  - sudo apt-get install -y sendmail
- 
+
 script:
  - ./emailscript.pl
 
 notifications:
- slack:
-   rooms:
-- nothingorganization:GN1JzklSpbMyfZVWcS05U6a0#mygitrepos
+  slack:
+    rooms:
+      - nothingorganization:GN1JzklSpbMyfZVWcS05U6a0#mygitrepos
